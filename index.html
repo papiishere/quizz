@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#ffffff ;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color:#ffffff ;
+            
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+        }
+        h1, h2 {
+ text-align: center;
+            color:#3312db ;
+        }
+       
+.instructions {
+            text-align: left;
+        }
+ p {
+            line-height: 1.6;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color:#020208;
+            
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color:#2cd12;
+            color:#ffffff ;
+            border: 10px;
+            cursor: pointer;
+         
+        } footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.902);
+  color: white;
+}
+
+ </style>
+</head>
+<body><b>
+    <div class="container">
+        <!-- Introduction -->
+        
+        
+
+         <!-- Question 11 -->
+        <div class="question">
+            <h1>Introduction</h1>
+<div>
+    
+    In the initial unit, we explored the nature, characteristics, and behaviours within educational psychology. Educators must grasp the diverse tasks they undertake, like providing tailored learning experiences to steer students’ behaviour positively. However, identical experiences may yield varied responses. For example, a teacher reads a passage in class and asks students to repeat it. Despite the same experience, students may react differently: some mimic intonation flawlessly, while others falter in pace, punctuation, pronunciation, or intonation. This variation stems from factors such as students’ learning styles, prior knowledge, cognitive abilities, and backgrounds. Environmental factors like classroom dynamics, peer influence, and instructional methods also play a role. To address this, educators can adopt a project-based learning approach. This method integrates real-world contexts, collaborative tasks, and personalized learning paths to accommodate diverse styles and foster intrinsic motivation. It enables students to explore topics deeply, apply critical thinking, and showcase learning through creative projects, thus accommodating the range of responses seen in different learning experiences.
+</div>
+<div>
+    
+    By engaging in project-based learning, students will acquire a comprehensive understanding of the method’s meaning, definition, characteristics, principles, steps, advantages, and applications. Through hands-on experiences and collaborative projects, students will delve into the essence of project-based learning, grasping its core concepts and principles. They will identify and analyse the key characteristics that distinguish project-based learning from traditional approaches, gaining insights into its dynamic and student-centred nature. By following the structured steps of project-based learning, students will develop essential skills in problem-solving, critical thinking, and collaboration. They will recognize the numerous advantages of project-based learning, including deeper learning, increased engagement, and real-world application of knowledge. Additionally, with the help of examples, students will understand on which topics and subjects this method is most appropriate, recognizing its effectiveness across disciplines such as science, social studies, language arts, and mathematics. Overall, students will emerge from the experience with a thorough understanding of project-based learning and its transformative impact on their education.
+</div>
+<div>
+        
+    What is the meaning of project-based learning method, and how does it differ from traditional teaching approaches? Define project-based learning and outline its key characteristics that distinguish it from other instructional methods. What are the essential steps involved in implementing project-based learning in the classroom? Discuss the principles that form the foundation of project-based learning and how they guide instructional practices. What are the merits and demerits of utilizing project-based learning in educational settings, and how do they impact student learning across different subjects? How does project-based learning benefit students’ learning, and what types of learning occur during project-based activities? What types of questions typically arise in students’ minds during project-based learning experiences, and how do these questions drive their inquiry and exploration? Identify the two stages of development in project-based learning, and describe the characteristics of each stage. Which learning experiences would be more appropriate for students at different stages of project-based learning, and why?
+</div>
+<div>
+    In this module, you will get answers to many such questions, and it will help you in understanding the project-based learning method taking place in the learner.
+</div>
+<div>
+    The primary task of this module is to engage with this programmed learning material. Before you begin, carefully review the instructions provided:>
+            
+</div>
+<div>
+    <pre><b>
+ 1.	Go through the material at your own pace to ensure thorough understanding.
+            
+2.	In this learning journey, you’ll grasp the essence of project-based learning methods.
+            
+3.	After each section, assess your understanding to track your progress.
+            
+4.	The content is designed to encourage self-directed learning, empowering you to navigate independently.
+            
+5.	Each section presents information followed by questions or blank spaces. Respond to these prompts.
+            
+6.	Examine each section carefully to understand the questions asked.
+            
+7.	Pay attention to underlined words and symbols for clarity.
+            
+8.	Embrace a dynamic learning experience without static images.
+            
+9.	Use the provided answer sheet to record your responses, matching them with the corresponding section numbers.
+            
+10.	If you make a mistake, revisit the section to identify and correct any misunderstandings before moving forward.
+            
+11.	Evaluate your understanding through the concluding test, which acts as a measure of your absorbed knowledge. 
+</b></pre>
+</div>
+            
+            
+            
+
+ <script>
+        function checkAnswer(questionNumber) {
+            var answerId = "answer" + questionNumber;
+            var userAnswer = document.getElementById(answerId).value.toLowerCase().trim();
+            var answerDivId = "answer" + questionNumber + "Div";
+            var answerDiv = document.getElementById(answerDivId);
+            var feedbackId = "feedback" + questionNumber;
+            var feedbackDiv = document.getElementById(feedbackId);
+            var correctAnswer = answerDiv.innerText.toLowerCase().split(":")[1].trim();
+
+            if (userAnswer === correctAnswer) {
+                feedbackDiv.innerHTML = "<p style='color: green;'>Correct!</p>";
+            } else {
+                feedbackDiv.innerHTML = "<p style='color: red;'>Incorrect. The correct answer is: " + correctAnswer + "</p>";
+                document.getElementById(answerId).disabled = true;
+            }
+        }
+    </script>
+
+<br>
+   
+<!-- next button to nevigate to  teachingframe1.html -->
+     <a href='page1.htm'><button>NEXT</button></a>
+</b>
+  
+</body>
+<footer>
+    <p>Author: Reeti Chaudhary<br>
+
+    <p>M.ed II sem.<br>
+        Roll no. 2361009
+        </p>
+  </footer>
+</html>

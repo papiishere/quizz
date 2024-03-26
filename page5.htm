@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heuristic Method of Teaching</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#ffffff ;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color:#ffffff ;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+
+ }
+        h1, h2, h3 {
+            color:#eb0e1d ;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color:#020208;
+            border-radius: 10px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color:#2a10eb;
+            color:#ffffff ;
+            border: 10px;
+            cursor: pointer;
+            border-radius: 1px;
+        }
+        footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.902);
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Introduction -->
+        
+        
+
+         <!-- Question 41 -->
+        <div class="question">
+<h2>Limitations or demerits of project based learning method  </h2>
+            <p>Frame 41:  Financial constraints: The execution of projects demands substantial financial resources, such as purchasing seeds, plants, and other necessities. Returns may not always justify the expenditure, making it impractical for many institutions due to budget limitations.<br>
+                Execution of project may lead to ____________ 
+              </p>
+
+
+<input type="text" id="answer11">
+            <button class="btn" onclick="checkAnswer(11)">Submit</button>
+            <div class="answer" id="answer11Div">Answer: ( financial issues </div>
+            <div id="feedback11"></div>
+        </div>
+
+        
+         <!-- Question 42 -->
+        <div class="question">
+
+            <p>Frame 42: Time-consuming: Projects require extensive planning and execution, often spanning years for completion. It’s challenging to cover the entire curriculum through projects within a single session, making it impractical for comprehensive learning.<br>
+                Time consuming project are often impractical for ______________________  
+                </p>
+
+          
+<input type="text" id="answer12">
+            <button class="btn" onclick="checkAnswer(12)">Submit</button>
+            <div class="answer" id="answer12Div">Answer:  comprehensive learning</div>
+            <div id="feedback12"></div>
+        </div>
+
+        <!-- Question 43 -->
+        <div class="question">
+
+            <p>Frame 43 : High expectations from teachers: Successful project implementation places heavy demands on teachers, from facilitating project selection to providing guidance throughout. Teachers need to possess diverse knowledge and skills, making it a challenging task. <br>
+                Teachers are expected to possess diverse ______________ and __________ for successful project implementation 
+                </p>
+
+ 
+<input type="text" id="answer13">
+            <button class="btn" onclick="checkAnswer(13)">Submit</button>
+            <div class="answer" id="answer13Div">Answer:  knowledge and skill </div>
+            <div id="feedback13"></div>
+        </div>
+
+        <!-- Question 44 -->
+        <div class="question">
+        
+            <p>Frame 44 :  Limited systematic learning: Project-based learning may result in fragmented knowledge acquisition, as students focus primarily on project completion rather than systematic learning. This method lacks structured teaching approaches, raising concerns about its effectiveness in providing organized learning experiences. <br>
+                Fragmented knowledge acquisition occurs when students don’t focus on _______________ learning. 
+                </p>
+<input type="text" id="answer14">
+            <button class="btn" onclick="checkAnswer(14)">Submit</button>
+            <div class="answer" id="answer14Div">Answer: systematic </div>
+            <div id="feedback14"></div>
+        </div>
+ 
+
+<!-- Question 45 -->
+        <div class="question">
+        
+            <p>Frame 44 :   Practical difficulties: Schools often lack the necessary funds and infrastructure for project implementation. The vastness of social sciences curricula and the mismatch with examination systems further hinder the effective use of this method.
+            Effective use of project method can often be hinder by lack of ______________ and _______________ 
+            </p>
+ <input type="text" id="answer15">
+            <button class="btn" onclick="checkAnswer(15)">Submit</button>
+            <div class="answer" id="answer15Div">Answer: funds , infrastructure </div>
+            <div id="feedback15"></div>
+        </div>
+
+        <!-- Question 46 -->
+        <div class="question">
+        
+            <p>Frame 46 : Resource limitations: Projects often require specific resources such as equipment, materials, and technology, which may not be readily available in educational settings. This scarcity can hinder the implementation of projects, limiting students’ learning opportunities.<br>
+                Scarcity of specific resources in educational settings may lead to hindrance in students ___________ 
+                 
+            </p>
+ <input type="text" id="answer15">
+            <button class="btn" onclick="checkAnswer(15)">Submit</button>
+            <div class="answer" id="answer15Div">Answer:  </div>
+            <div id="feedback15"></div>
+        </div>
+<!-- Question 47 -->
+<div class="question">
+        
+    <p>Frame 47  : Group dynamics challenges:
+        Collaborative projects rely on effective teamwork, but group dynamics can present challenges such as conflicts, unequal participation, and coordination issues. Managing these dynamics can be time-consuming and detract from the learning objectives of the project.<br>
+       Effective teamwork is extensively needed for ________________ 
+       
+    </p>
+<input type="text" id="answer15">
+    <button class="btn" onclick="checkAnswer(15)">Submit</button>
+    <div class="answer" id="answer15Div">Answer: collaborative project  </div>
+    <div id="feedback15"></div>
+</div>
+
+
+
+
+       
+
+    <script>
+        function checkAnswer(questionNumber) {
+            var answerId = "answer" + questionNumber;
+            var userAnswer = document.getElementById(answerId).value.toLowerCase().trim();
+            var answerDivId = "answer" + questionNumber + "Div";
+            var answerDiv = document.getElementById(answerDivId);
+            var feedbackId = "feedback" + questionNumber;
+            var feedbackDiv = document.getElementById(feedbackId);
+            var correctAnswer = answerDiv.innerText.toLowerCase().split(":")[1].trim();
+
+            if (userAnswer === correctAnswer) {
+                feedbackDiv.innerHTML = "<p style='color: green;'>Correct!</p>";
+            } else {
+                feedbackDiv.innerHTML = "<p style='color: red;'>Incorrect. The correct answer is: " + correctAnswer + "</p>";
+                document.getElementById(answerId).disabled = true;
+            }
+        }
+    </script>
+  <a href='page6.html'><button>NEXT</button></a>
+  <footer>
+    <p>Author: Reeti Chaudhary<br>
+
+    <p>M.ed II sem.<br>
+        Roll no. 2361009
+        </p>
+  </footer>
+  
+</body>
+</html>
